@@ -22,9 +22,6 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
   },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
