@@ -28,7 +28,13 @@ const App = () => {
         <Navbar userInfo={userInfo} setUserInfo={setUserInfo} />
 
         <Switch>
-          <Route path="/" exact component={() => <Redirect to="/posts" />} />
+          <Route
+            path="/"
+            exact
+            component={() => <Home userInfo={userInfo} />}
+            userInfo={userInfo}
+            setUserInfo={setUserInfo}
+          />
           <Route
             path="/posts"
             exact
