@@ -44,7 +44,18 @@ const Posts = ({ setCurrentId, userInfo }) => {
     );
 
   return isLoading ? (
-    <CircularProgress />
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "40vh",
+      }}
+    >
+      <CircularProgress />
+      <Typography component="body1">Loading</Typography>
+    </div>
   ) : (
     <Grid
       className={classes.container}

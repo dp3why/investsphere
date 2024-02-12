@@ -12,6 +12,7 @@ export default makeStyles((theme) => ({
     borderBottom: "1px solid #ddd",
   },
   heading: {
+    marginLeft: "8px",
     color: "rgba(0,183,25, 1)",
     textDecoration: "none",
     fontFamily: "sans-serif",

@@ -44,6 +44,7 @@ const Navbar = ({ userInfo }) => {
       elevation={0}
     >
       <div className={classes.brandContainer}>
+        <img src="/images/logo.png" alt="logo" width={35} height={35} />
         <Typography
           className={classes.heading}
           component={Link}

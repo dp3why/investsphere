@@ -64,7 +64,7 @@ const Form = ({ currentId, setCurrentId }) => {
     return (
       <Paper className={classes.paper}>
         <Typography variant="h6" align="center">
-          Please Sign In to create your own posts and like others' posts!
+          Let's Sign In to Share your ideas, comment or like others' posts!
         </Typography>
       </Paper>
     );

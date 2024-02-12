@@ -6,6 +6,7 @@ import {
   AppBar,
   TextField,
   Button,
+  Typography,
 } from "@material-ui/core";
 import Posts from "../Posts/Posts";
 import Form from "../Form/Form";
@@ -79,6 +80,9 @@ const Home = ({ userInfo }) => {
             position="static"
             color="inherit"
           >
+            <Typography variant="h6" align="center">
+              Explore Insights
+            </Typography>
             <TextField
               name="search"
               variant="outlined"

@@ -70,6 +70,9 @@ const Post = ({ post, creator, setCurrentId, userInfo }) => {
   };
 
   const handleLike = async () => {
+    if (!userInfo) {
+      return;
+    }
     dispatch(likePost(post._id));
 
     // check if the current user likes the post
@@ -97,7 +100,7 @@ const Post = ({ post, creator, setCurrentId, userInfo }) => {
           {moment(post.createdAt).fromNow()}
         </Typography>
       </div>
-      {setShowDelete && (
+      {showDelete && (
         <div className={classes.overlay2}>
           <Button
             onClick={() => setCurrentId(post._id)}

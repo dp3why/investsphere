@@ -10,7 +10,6 @@ export default makeStyles((theme) => ({
     borderRadius: "20px",
     objectFit: "cover",
     width: "100%",
-    maxHeight: "600px",
   },
   card: {
     display: "flex",
